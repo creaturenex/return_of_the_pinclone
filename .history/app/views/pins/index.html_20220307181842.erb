@@ -1,0 +1,27 @@
+<%= image_tag("bgclone.jpg", class: "img-fluid d-block mx-auto", :alt => "background") %>
+<%= javascript_pack_tag 'masonry' %>
+
+
+<div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+  <% @pins.each do |pin| %>
+    <div class="card">
+      <% if pin.image.attached? %>
+        <p>
+          <%= image_tag pin.image, style: "width: 100%; height: 200px; display: block" %>
+        </p>
+      <% end %>
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <%= link_to pin.title, pin %>
+        </h5>
+        <p class="card-text">
+          <%= pin.description %>
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>

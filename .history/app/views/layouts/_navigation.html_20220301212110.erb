@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-brand">
+            <%= link_to "Pin Board", root_path %>
+            <% if user_signed_in? %>
+                <ul class="nav navbar-nav navbar-right">
+
+                <li><%= link_to "New Pin", new_pin_path %></li>
+
+
+                </ul>
+            <% end %>
+        </div>
+    </div>
+</nav>

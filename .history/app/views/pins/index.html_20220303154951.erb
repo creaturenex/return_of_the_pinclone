@@ -1,0 +1,16 @@
+<div class="container_banner">
+  <div class="col-md-offset-4"></div>
+  <div class="col-md-4 px-0">
+    <%= image_tag("bgclone.jpg", class: "img-fluid", :alt => "background") %>
+  </div>
+  <div class="col-md-offset-4"></div>
+</div>
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <% @pins.each do |pin| %>
+    <div class="grid-item">
+      <h1><%= link_to pin.title, pin %></h1>
+    <% end %>
+  </div>
+</div>
+</div>

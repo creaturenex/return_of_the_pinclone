@@ -1,0 +1,12 @@
+<div class="container-fluid">
+
+  <%=image_tag "assests/images/bgclone.jpg" class: "img-fluid" alt: "Responsive image" %>
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <% @pins.each do |pin| %>
+      <div class="grid-item">
+        <h1><%= link_to pin.title, pin %></h1>
+      <% end %>
+    </div>
+  </div>
+</div>

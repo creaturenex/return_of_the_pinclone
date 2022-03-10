@@ -1,0 +1,21 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand">
+    <%=image_tag "clone.png", size: "30x30", class: "d-inline-block align-top", alt: "" %>
+    <%= link_to "Pin Board", root_path %>
+    </a>
+
+    <div class="ml-auto">
+        <% if current_user %>
+            <a class ="navbar-text nav-item mr-3 text-white">
+                <%= link_to "New Pin", new_pin_path %>
+            </a>
+            <a class ="navbar-text nav-item mr-3 text-white">
+                <%= link_to "Account", edit_user_registration_path %>
+            </a>
+            <a class ="navbar-text nav-item mr-3 text-white">
+                <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+            </a>
+        <% end %>
+    </div>
+
+</nav>

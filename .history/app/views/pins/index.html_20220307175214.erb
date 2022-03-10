@@ -1,0 +1,16 @@
+<%= image_tag("bgclone.jpg", class: "img-fluid d-block mx-auto", :alt => "background") %>
+<%= javascript_pack_tag 'masonry' %>
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <% @pins.each do |pin| %>
+    <div class="card">
+      <% if pin.image.attached? %>
+        <p>
+          <%= image_tag pin.image, style: "width: 200px; display: block" %>
+        </p>
+      <% end %>
+      <h1><%= link_to pin.title, pin %></h1>
+    </div>
+  <% end %>
+</div>

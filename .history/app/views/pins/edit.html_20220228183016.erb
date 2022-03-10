@@ -1,0 +1,4 @@
+<h1>Edit Pin</h1>
+    <%= image_tag @pin.image.variant(resize: "500x500")  %>
+    <%= render 'form' %>
+    <%= link_to "Cancel", pin_path %>
