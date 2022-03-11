@@ -1,0 +1,56 @@
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<%= image_tag("bgclone.jpg", class: "img-fluid d-block mx-auto", :alt => "background") %>
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row" data-masonry='{"percentPosition": true }'>
+
+      <% @pins.each do |pin| %>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <% if pin.image.attached? %>
+              <p>
+                <%= image_tag pin.image, style: "width: 200px; display: block"%>
+
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>
+                    Placeholder
+                  </title>
+                  <rect width="100%" height="100%" fill="#868e96">
+                  </rect>
+                  <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                  </svg>
+
+
+
+
+              </p>
+            <% end %>
+
+
+
+
+
+
+            <div class="card-body">
+              <h5 class="card-title">
+                <%= link_to pin.title, pin %>
+              </h5>
+              <p class="card-text">
+                <%= pin.description %>
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
+  </div>
+</div>

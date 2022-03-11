@@ -9,16 +9,6 @@
       "js.map": [
         "/packs/js/application-1d8da106c3dccd4c07cb.js.map"
       ]
-    },
-    "masonry": {
-      "js": [
-        "/packs/js/masonry-f0f786d59fbce07c2e73.js"
-      ],
-      "js.map": [
-        "/packs/js/masonry-f0f786d59fbce07c2e73.js.map"
-      ]
     }
-  },
-  "masonry.js": "/packs/js/masonry-f0f786d59fbce07c2e73.js",
-  "masonry.js.map": "/packs/js/masonry-f0f786d59fbce07c2e73.js.map"
+  }
 }
