@@ -1212,6 +1212,12 @@ The two tables that are added to your schema are active_storage_attachments and 
 
 Active Storage table migrations
 
+Next install Imagemagick. It provides the necessary libraries that allow image processing.
+```bash
+sudo apt install imagemagick
+apt install libvips42
+```
+
 ## Model Set Up
 
 After creating your migration, go to the model file that you would like your image to be associated with. For my movie review application, I wanted a user to be able to upload an image of a movie poster, so in my case it was to the movie model.
