@@ -55,6 +55,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# used for form generation
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
 
+# used for user authentication
 gem 'devise', '~> 4.4', '>= 4.4.3'
+
+# used for the ability to vote on models/ie objects
+gem 'acts_as_votable'
