@@ -11,9 +11,6 @@ import "channels"
 import "bootstrap"
 import "../stylesheets/application"
 
-// testing to see if this will enable bootstrap in Heroku
-require("bootstrap/dist/js/bootstrap")
-
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
