@@ -1,5 +1,6 @@
 class PinsController < ApplicationController
   before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
+  before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
 
   def index
     @pins = Pin.all.order("created_at DESC")
@@ -49,5 +50,9 @@ class PinsController < ApplicationController
 
   def find_pin
     @pin = Pin.find(params[:id])
+  end
+
+  def set_s3_direct_post
+    @s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
   end
 end

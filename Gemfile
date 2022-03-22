@@ -64,4 +64,8 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 # used for the ability to vote on models/ie objects
 gem 'acts_as_votable'
 
+# CSS framework
 gem 'bootstrap', '~> 5.0.2'
+
+# aws gem to enable image storage to aws
+gem 'aws-sdk', require: false
