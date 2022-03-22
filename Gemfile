@@ -63,3 +63,5 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 
 # used for the ability to vote on models/ie objects
 gem 'acts_as_votable'
+
+gem 'bootstrap', '~> 5.0.2'
