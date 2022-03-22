@@ -68,4 +68,4 @@ gem 'acts_as_votable'
 gem 'bootstrap', '~> 5.0.2'
 
 # aws gem to enable image storage to aws
-gem 'aws-sdk', require: false
+gem 'aws-sdk-s3', require: false
