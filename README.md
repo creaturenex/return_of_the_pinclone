@@ -1303,3 +1303,8 @@ So how do we upload images in our rails project using Active Storage?
 5.  **View**: add a `file_field` to our form and use `image_tag` to display our uploaded image
 
 Hopefully you found this helpful, and will be doing some awesome things in your projects with your new found information!
+
+used this to deploy images to heroku
+
+
+https://gist.github.com/bigtiger/be41fffcd103d7e98c5fe4fdff0af3f9
