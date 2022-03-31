@@ -1,5 +1,7 @@
 This README is an update to several articles that I used as a reference a mjority has been copied to be updated at a later time.
 
+http://pin-clone-020722.herokuapp.com/ working demo
+
 [David Allen - Build a Pinterest Clone](https://deallen7.medium.com/how-to-build-a-pinterest-clone-in-ruby-on-rails-bf69ca977352#3d0e)
 
 [Digital Ocean - Using PostgreSQL on Rails](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart)
