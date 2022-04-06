@@ -1,4 +1,4 @@
-This README is an update to several articles that I used as a reference a mjority has been copied to be updated at a later time.
+This README is an update to several articles that I used as a reference a majority has been copied to be updated at a later time. Main difference is that I used ERB instead of HAML and active storage for image uploads and stored on heroku
 
 http://pin-clone-020722.herokuapp.com/ working demo
 
